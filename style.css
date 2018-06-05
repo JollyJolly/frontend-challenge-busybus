@@ -1,0 +1,157 @@
+body {
+  background-color: #ccc;
+  font-family: 'SF Pro Display', Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  min-width: 360px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.1538em;
+  color: #fff;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.8462em;
+  color: #fff;
+}
+
+header {
+  background-color: #002C4B;
+  height: 1.8462em;
+  text-align: center;
+  padding: 2.5em 0 1.5em;
+}
+
+section.buses {
+  padding-bottom: 52px;
+}
+
+article.bus {
+  background-color: #125A8E;
+  color: #fff;
+  padding: 1em;
+}
+
+article.bus {
+  border-top: 1px solid #4481AC;
+  border-bottom: 1px solid #001F35;
+}
+
+article.bus:first-of-type {
+  border-top: none;
+}
+
+article.bus .left {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+article.bus .right {
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+article.bus ol li span.big {
+  font-size: 1.8462em;
+  font-weight: 500;
+}
+
+article.bus ol li span.medium {
+  font-size: 1.2308em;
+  font-weight: 500;
+}
+
+article.bus ol li span.small {
+  font-size: 0.9em;
+  margin-left: 3px;
+}
+
+article.bus .destination {
+  background-image: url(/images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 0.9em;
+  background-position-y: center;
+  padding-left: 15px;
+}
+
+article.reroute {
+  background-color: #D4A912;
+  border-top: 1px solid #E4BD33;
+  border-bottom: 1px solid #886E1D;
+}
+
+article.ots {
+  background-color: #AC2929;
+  border-top: 1px solid #C54646;
+  border-bottom: 1px solid #5F0909;
+}
+
+article.reroute li, article.ots li {
+  line-height: 1.5em;
+}
+
+nav {
+  background-color: #F8F8F8;
+  padding: 0.5em;
+  box-sizing: border-box;
+  bottom: 0px;
+  min-width: 360px;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul li {
+  color: #A1A1A1;
+  display: inline-block;
+  font-size: 0.77em;
+  padding-top: 28px;
+  text-align: center;
+  position: relative;
+  width: 32.8%;
+}
+
+nav ul li span::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 25px;
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+nav ul li.favourite span::before {
+  background-image: url(/images/favourites.png);
+}
+
+nav ul li.search span::before {
+  background-image: url(/images/search.png);
+}
+
+nav ul li.setting span::before {
+  background-image: url(/images/setting.png);
+}
+
+@media screen and (min-width: 575px) {
+  .container {
+    margin: 0 auto;
+    width: 575px;
+  }
+
+  nav {
+    left: 50%;
+    width: 575px;
+    margin-left: -287.5px;
+  }
+}
