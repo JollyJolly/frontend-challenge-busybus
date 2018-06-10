@@ -28,74 +28,73 @@ header {
   padding: 2.5em 0 1.5em;
 }
 
-section.buses {
+.buses {
   padding-bottom: 52px;
 }
 
-article.bus {
+.bus {
   background-color: #125A8E;
+  border-top: 1px solid #4481AC;
+  border-bottom: 1px solid #001F35;
+  clear: both;
   color: #fff;
   padding: 1em;
 }
 
-article.bus {
-  border-top: 1px solid #4481AC;
-  border-bottom: 1px solid #001F35;
-}
-
-article.bus:first-of-type {
+.bus:first-of-type {
   border-top: none;
 }
 
-article.bus .left {
-  width: 50%;
+.left {
   display: inline-block;
   vertical-align: middle;
+  width: 50%;
 }
 
-article.bus .right {
+.right {
   display: inline-block;
-  width: 49%;
   text-align: right;
   vertical-align: middle;
+  width: 48%;
 }
 
-article.bus ol li span.big {
+.big {
   font-size: 1.8462em;
   font-weight: 500;
 }
 
-article.bus ol li span.medium {
+.medium {
   font-size: 1.2308em;
   font-weight: 500;
 }
 
-article.bus ol li span.small {
+.small {
   font-size: 0.9em;
   margin-left: 3px;
 }
 
-article.bus .destination {
-  background-image: url(/images/arrow.png);
+.destination {
+  background-image: url(images/arrow.png);
   background-repeat: no-repeat;
   background-size: 0.9em;
   background-position-y: center;
+  line-height: 1.5em;
   padding-left: 15px;
 }
 
-article.reroute {
+.reroute {
   background-color: #D4A912;
   border-top: 1px solid #E4BD33;
   border-bottom: 1px solid #886E1D;
 }
 
-article.ots {
+.ots {
   background-color: #AC2929;
   border-top: 1px solid #C54646;
   border-bottom: 1px solid #5F0909;
 }
 
-article.reroute li, article.ots li {
+.reroute li, .ots li {
   line-height: 1.5em;
 }
 
@@ -116,7 +115,7 @@ nav ul li {
   padding-top: 28px;
   text-align: center;
   position: relative;
-  width: 32.8%;
+  width: 32.6%;
 }
 
 nav ul li span::before {
@@ -131,16 +130,16 @@ nav ul li span::before {
   background-repeat: no-repeat;
 }
 
-nav ul li.favourite span::before {
-  background-image: url(/images/favourites.png);
+.favourite span::before {
+  background-image: url(images/favourites.png);
 }
 
-nav ul li.search span::before {
-  background-image: url(/images/search.png);
+.search span::before {
+  background-image: url(images/search.png);
 }
 
-nav ul li.setting span::before {
-  background-image: url(/images/setting.png);
+.setting span::before {
+  background-image: url(images/setting.png);
 }
 
 @media screen and (min-width: 575px) {
